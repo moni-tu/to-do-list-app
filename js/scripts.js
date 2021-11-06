@@ -9,6 +9,7 @@ function newItem(){
   list.append('<li>some item</li>');
   let li = $('<li></li>');
   list.append('li');
+  let inputValue = $('#input').val();
 
 
 
