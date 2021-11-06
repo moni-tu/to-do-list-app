@@ -3,6 +3,12 @@
 //Tip: You can reuse createTextNode('X') in jQuery like this: deleteButton.append(document.createTextNode('X'));
 
 function newItem(){
+  // jQuery
+
+  let list = $('#list');
+  list.append('<li>some item</li>');
+  
+
 
 
     //javascript
