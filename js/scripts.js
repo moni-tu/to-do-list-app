@@ -7,7 +7,8 @@ function newItem(){
 
   let list = $('#list');
   list.append('<li>some item</li>');
-  
+  let li = $('<li></li>');
+  list.append('li');
 
 
 
