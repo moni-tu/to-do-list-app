@@ -31,11 +31,9 @@ function newItem(){
   function deleteListItem() {
     li.addClass('delete');
   }
-
   deleteButton.on('click', deleteListItem);
 
   $('#list').sortable()
-
 }
 
   
