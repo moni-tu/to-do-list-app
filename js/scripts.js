@@ -2,13 +2,10 @@
 
 //Tip: You can reuse createTextNode('X') in jQuery like this: deleteButton.append(document.createTextNode('X'));
 
-// 1. Add a new list item (jQuery)
 function newItem(){
 
-  //let list = $('#list');
-  //list.append('<li>some item</li>');
+  // 1. Add a new list item (jQuery)
   let li = $('<li></li>');
-  //list.append('li');
   let inputValue = $('#input').val();
   li.append (inputValue);
 
@@ -20,12 +17,13 @@ function newItem(){
   }
 
   //2. Crossing out an item from the list of items:
-    function crossOut() {
+  function crossOut() {
     li.toggleClass('strike');
   }
 
   li.on('dblclick',  crossOut);
 
+  // Adding a delete button
 
 }
 
