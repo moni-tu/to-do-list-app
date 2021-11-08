@@ -24,6 +24,15 @@ function newItem(){
   li.on('dblclick',  crossOut);
 
   // Adding a delete button
+  let deleteButton = $('<deleteButton></deleteButton>');
+  deleteButton.append(document.createTextNode('X'));
+  li.append(deleteButton);
+
+  function deleteListItem() {
+    li.addClass('delete');
+  }
+  
+
 
 }
 
