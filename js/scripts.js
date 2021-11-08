@@ -5,20 +5,19 @@
 // `. Add a new list item (jQuery)
 function newItem(){
 
-  let list = $('#list');
-  list.append('<li>some item</li>');
+  //let list = $('#list');
+  //list.append('<li>some item</li>');
   let li = $('<li></li>');
-  list.append('li');
+  //list.append('li');
   let inputValue = $('#input').val();
-  li.append ('inputValue');
+  li.append (inputValue);
 
   if (inputValue === '') {
-    alert("You must write something!");
+    alert('You must write something!');
   } else {
-    let list = $('#list');
-    list.append('li');
+		$('#list').append(li);
+    $('#input').val('')
   }
-}
 
 //2. Crossing out an item from the list of items:
 function crossOut{
